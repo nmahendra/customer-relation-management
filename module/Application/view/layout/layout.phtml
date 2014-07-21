@@ -1,0 +1,146 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle($this->translate('PG Nish Engineering (Pvt) Ltd'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0') ?>
+
+        <!-- Le styles -->
+        <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/images/favicon.ico'))
+						->prependStylesheet($this->basePath() . '/css/style.css') ?>
+
+        <?php echo $this->headScript()
+										->prependFile($this->basePath() . '/js/cycle-selectors.js')
+										->prependFile($this->basePath() . '/js/jquery.cycle.all.js')
+										->prependFile($this->basePath() . '/js/jquery-1.7.2.min.js');
+		?>
+
+
+        <!-- Scripts -->
+        <?php /* echo $this->headScript()->prependFile($this->basePath() . '/js/jquery-1.7.2.min.js')
+                                      //->prependFile($this->basePath() . '/js/selectivizr-min.js')
+                                      ->prependFile($this->basePath() . '/js/jquery.cycle.all.js')
+                                      //->prependFile($this->basePath() . '/js/navigation.js')
+                                      ->prependFile($this->basePath() . '/js/cycle-selectors.js')
+                                      //->prependFile($this->basePath() . '/js/html5.js')
+                                      //->prependFile($this->basePath() . '/js/jsEvent.js')
+									  ->prependFile($this->basePath() . '/js/events.js') */ ?>
+       	<!-- Override Styles -->
+       <?php //echo $this->headStyle(); ?>
+
+    </head>
+	<body id="gold">
+		<header>
+			<section class="clearfix" id="logo-search">
+				<a class="ir" id="maga" href="/">Maga - Leading Construction Company</a>
+				<div id="search-container">
+					<form>
+						<input type="search" name="">
+						<div class="radio-group">
+							<input type="radio" name="group1" value="Search equipment" checked="checked" >Search equipment
+							<input type="radio" name="group1" value="Search site">Search site
+						</div>                    
+						<input type="submit" value="Search">
+					</form>
+				</div>
+			</section>
+		</header>
+		<nav>
+			<ul class="menu">
+				<li class="active"><a href="<?php echo $this->url('application') ?>">Home</a></li>
+				<li><a href="<?php echo $this->url('account') ?>">Services</a></li>
+				<li><a href="<?php echo $this->url('news') ?>">News</a></li>
+				<li><a href="<?php echo $this->url('contact') ?>">Contact</a></li>
+				<li><a href="<?php echo $this->url('about') ?>">About Us</a></li>
+			</ul>
+		</nav>
+
+		<?php echo $this->content; ?>
+
+		<footer>
+			<section class="container-920 clearfix">
+					
+					<section id="footer-categories">
+						<h3>Equipment Categories</h3>
+
+						<ul>
+							<li><a href="#">Bobcats</a></li>
+							<li><a href="#">Generators</a></li>
+							<li><a href="#">Pumps</a></li>
+							<li><a href="#">Forklifts</a></li>
+							<li><a href="#">Fire-fighting units</a></li>
+						</ul>
+						
+						<ul>
+							<li><a href="#">Mini excavators</a></li>
+							<li><a href="#">Compressors</a></li>
+							<li><a href="#">Welders</a></li>
+							<li><a href="#">Lifts</a></li>
+							<li><a href="#">Tilt trays</a></li>
+						</ul>
+						
+						<ul>
+							<li><a href="#">Service trucks</a></li>
+							<li><a href="#">Small trucks</a></li>
+							<li><a href="#">Water trucks</a></li>
+							<li><a href="#">Lighting towers</a></li>
+							<li><a href="#">Trailers</a></li>
+						</ul>
+		
+					</section>            
+					
+					<section id="testimonials">
+						<!--h3>Testimonials</h3>
+						<div id="testimonials-cycle">
+						
+							<div>
+								<p>Integer justo diam, interdum id porta et congue at diam. Mauris vitae risus mauris ut mollis nisi, proin ipsum dolor pretium aliquam consectetur eget, semper mollis sem. Etiam convallis lorem nisi. Ut accumsan est dui. Proin vel consequat nibh. Integer eu neque non metus posuere!<img src="images/interface/quote-right.png"></p>
+								
+								<p class="source">Client name</p>
+							</div>
+							
+							<div>
+								<p>Etiam accumsan ligula a elit vehicula eu ornare velit gravida. Fermentum quis vulputate ac, condimentum vel mi. Duis facilisis lacinia leo ac viverra. Nulla facilisi. Mauris elit justo, tempus et suscipit eget, ultrices id ipsum. Sed tempor leo aliquet justo posuere sit amet blandit lectus malesuada.<img src="images/interface/quote-right.png"></p>
+								
+								<p class="source">Client name</p>
+							</div>
+							
+							<div>
+								<p>Sed pulvinar faucibus risus vitae fringilla. Etiam eu odio sagittis nisi rhoncus vulputate a vel enim. Phasellus nisl tellus, tincidunt eu aliquet id, ornare nec ipsum. Quisque nunc mi, feugiat nec tincidunt sit amet, gravida eu nibh. Quisque et justo a orci laoreet laoreet.<img src="images/interface/quote-right.png"></p>
+								
+								<p class="source">Client name</p>
+							</div>
+						</div>
+						<div class="cycle-navigation testimonials-cycle">
+							<a class="prev ir">Previous</a><div class="cycle-nav"></div><a class="next ir">Next</a>
+						</div-->
+					</section> 
+					
+			</section>
+			
+			<section class="container-920 footer">
+				
+				<ul id="footer-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="equipment.html">Equipment</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+				<aside>
+					<hgroup>
+						<p><a href='http://www.openworld.com.au'>© 2013 Open World</a></p>
+						<!--div><h3>MAGA<span></span></h3></div>
+						<h4>Construction <span>Sri Lanka</span></h4-->
+					</hgroup>
+				</aside>
+			   
+			</section>
+		</footer>
+
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>
